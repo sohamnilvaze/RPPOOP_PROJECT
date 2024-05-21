@@ -1,0 +1,682 @@
+.Coach{
+    width: 200px;
+    height: 500px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: lightblue;
+}
+
+#st1{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st2{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st3{
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st4{
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st5{
+    position: absolute;
+    top: 50px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st6{
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st7{
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black; 
+}
+
+#st8{
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st9{
+    position: absolute;
+    top: 80px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st10{
+    position: absolute;
+    top: 80px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st11{
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st12{
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st13{
+    position: absolute;
+    top: 110px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st14{
+    position: absolute;
+    top: 110px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st15{
+    position: absolute;
+    top: 110px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st16{
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st17{
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st18{
+    position: absolute;
+    top: 140px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st19{
+    position: absolute;
+    top: 140px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st20{
+    position: absolute;
+    top: 140px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st21{
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st22{
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st23{
+    position: absolute;
+    top: 170px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st24{
+    position: absolute;
+    top: 170px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st25{
+    position: absolute;
+    top: 170px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st26{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st27{
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black; 
+}
+
+#st28{
+    position: absolute;
+    top: 200px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st29{
+    position: absolute;
+    top: 200px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st30{
+    position: absolute;
+    top: 200px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st31{
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st32{
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st33{
+    position: absolute;
+    top: 230px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st34{
+    position: absolute;
+    top: 230px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st35{
+    position: absolute;
+    top: 230px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st36{
+    position: absolute;
+    top: 260px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st37{
+    position: absolute;
+    top: 260px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st38{
+    position: absolute;
+    top: 260px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st39{
+    position: absolute;
+    top: 260px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st40{
+    position: absolute;
+    top: 260px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st41{
+    position: absolute;
+    top: 290px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st42{
+    position: absolute;
+    top: 290px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st43{
+    position: absolute;
+    top: 290px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st44{
+    position: absolute;
+    top: 290px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st45{
+    position: absolute;
+    top: 290px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st46{
+    position: absolute;
+    top: 320px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st47{
+    position: absolute;
+    top: 320px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black; 
+}
+
+#st48{
+    position: absolute;
+    top: 320px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st49{
+    position: absolute;
+    top: 320px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st50{
+    position: absolute;
+    top: 320px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st51{
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st52{
+    position: absolute;
+    top: 350px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st53{
+    position: absolute;
+    top: 350px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st54{
+    position: absolute;
+    top: 350px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st55{
+    position: absolute;
+    top: 350px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st56{
+    position: absolute;
+    top: 380px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st57{
+    position: absolute;
+    top: 380px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st58{
+    position: absolute;
+    top: 380px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st59{
+    position: absolute;
+    top: 380px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st60{
+    position: absolute;
+    top: 380px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st61{
+    position: absolute;
+    top: 410px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st62{
+    position: absolute;
+    top: 410px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st63{
+    position: absolute;
+    top: 410px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st64{
+    position: absolute;
+    top: 410px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st65{
+    position: absolute;
+    top: 410px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st66{
+    position: absolute;
+    top: 440px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st67{
+    position: absolute;
+    top: 440px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black; 
+}
+
+#st68{
+    position: absolute;
+    top: 440px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st69{
+    position: absolute;
+    top: 440px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st70{
+    position: absolute;
+    top: 440px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st71{
+    position: absolute;
+    top: 470px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st72{
+    position: absolute;
+    top: 470px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st73{
+    position: absolute;
+    top: 470px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st74{
+    position: absolute;
+    top: 470px;
+    left: 160px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+#st75{
+    position: absolute;
+    top: 470px;
+    left: 180px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}

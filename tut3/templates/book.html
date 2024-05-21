@@ -1,0 +1,198 @@
+{% extends "layout.html" %}
+{% block body %}
+	<title>Seat Book</title>
+	<div class="content-section">
+		<form method="POST" action="" class="mx-auto" style="max-width: 400px;">
+			{{ form.hidden_tag() }}
+			<fieldset class="form-group">
+				<legend class="border-bottom mb-4">Book Your Seat Now</legend>
+				<div class="form-group">
+					{{ form.username.label(class="form-control-label") }}
+
+					{% if form.username.errors %}
+					{{ form.username(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{% for error in form.username.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+
+						</div>
+					{% else %}
+						{{ form.username(class="form-control form-control-lg") }}
+						
+					{% endif %}
+
+
+
+					
+				</div>
+
+                <div class="form-group">
+					{{ form.email.label(class="form-control-label") }}
+
+					{% if form.email.errors %}
+					{{ form.email(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{% for error in form.email.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+
+						</div>
+					{% else %}
+						{{ form.email(class="form-control form-control-lg") }}
+						
+					{% endif %}
+				
+				</div>
+
+				<div class="form-group">
+					{{ form.trainname.label(class="form-control-label") }}
+
+					{% if form.trainname.errors %}
+					{{ form.trainname(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{% for error in form.trainname.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+
+						</div>
+					{% else %}
+						{{ form.trainname(class="form-control form-control-lg") }}
+						
+					{% endif %}
+				
+
+				</div>
+
+				<div class="form-group">
+					{{ form.trainnumber.label(class="form-control-label") }}
+
+					{% if form.trainnumber.errors %}
+					{{ form.trainnumber(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{% for error in form.trainnumber.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+
+						</div>
+					{% else %}
+						{{ form.trainnumber(class="form-control form-control-lg") }}
+						
+					{% endif %}
+				
+				</div>
+
+				<div class="form-group">
+					{{ form.dateoftravel.label(class="form-control-label") }}
+
+					{% if form.dateoftravel.errors %}
+					{{ form.dateoftravel(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{% for error in form.dateoftravel.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+
+						</div>
+					{% else %}
+						{{ form.dateoftravel(class="form-control form-control-lg") }}
+						
+					{% endif %}
+				
+				</div>
+
+                <div class="form-group">
+					{{ form.seatno.label(class="form-control-label") }}
+
+					{% if form.seatno.errors %}
+					{{ form.seatno(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{% for error in form.seatno.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+
+						</div>
+					{% else %}
+						{{ form.seatno(class="form-control form-control-lg") }}
+						
+					{% endif %}
+				
+				</div>
+
+                <div class="form-group">
+					{{ form.startstation.label(class="form-control-label") }}
+
+					{% if form.startstation.errors %}
+					{{ form.startstation(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{% for error in form.startstation.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+
+						</div>
+					{% else %}
+						{{ form.startstation(class="form-control form-control-lg") }}
+						
+					{% endif %}
+				
+				</div>
+
+                <div class="form-group">
+					{{ form.endstation.label(class="form-control-label") }}
+
+					{% if form.endstation.errors %}
+					{{ form.endstation(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{% for error in form.endstation.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+
+						</div>
+					{% else %}
+						{{ form.endstation(class="form-control form-control-lg") }}
+						
+					{% endif %}
+				
+				</div>
+				<div class="form-group">
+					{{ form.coachname.label(class="form-control-label") }}
+
+					{% if form.coachname.errors %}
+					{{ form.coachname(class="form-control form-control-lg is-invalid") }}
+						<div class="invalid-feedback">
+							{% for error in form.endstation.errors %}
+								<span>{{ error }}</span>
+							{% endfor %}
+
+						</div>
+					{% else %}
+						{{ form.coachname(class="form-control form-control-lg") }}
+						
+					{% endif %}
+				
+				</div>
+            </fieldset>
+            <div class="form-group">
+				{{ form.submit(class="btn btn-outline-info") }}
+			</div>
+		</form>
+	</div>
+
+    <div class="border-top pt-3">
+		<small class="text-muted">
+			Need to take look again? <a class="ml-2" href="{{ url_for('coach1seat') }}">Seat Layout</a>
+		</small>
+	</div>
+
+{% endblock %}
+
+<!--<script>
+    // Update trainnumber field based on the selected trainname
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('trainname').addEventListener('change', function() {
+            var selectedTrainname = this.value;
+            var trainnumbers = JSON.parse('{{ trainnumbers | tojson | safe }}');
+            document.getElementById('trainnumber').value = trainnumbers[selectedTrainname];
+        });
+    });
+</script>-->
+

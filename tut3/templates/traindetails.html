@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Details</title>
+    <style>
+        /* Add CSS styles from the second code snippet */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #2704f0;
+            color: #ffffff;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #F8F8F8;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trains List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Train No</th>
+                <th>Train Name</th>
+                <th>Start Station</th>
+                <th>End Station</th>
+                <th>Days</th>
+                <th>Coaches</th>
+                <th>Departure Time</th>
+                <th>Arrival Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for train in trains %}
+            <tr>
+                <td>{{ train.trainno }}</td>
+                <td>{{ train.trainname }}</td>
+                <td>{{ train.startstation }}</td>
+                <td>{{ train.endstation }}</td>
+                <td>{{ train.days }}</td>
+                <td>{{ train.coaches }}</td>
+                <td>{{ train.departuretime }}</td>
+                <td>{{ train.arrivaltime }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
+{% endblock %}

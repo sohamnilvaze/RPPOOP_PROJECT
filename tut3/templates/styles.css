@@ -1,0 +1,44 @@
+.coach {
+  width: 350px;
+  height: 800px;
+  background-color: #f2f2f2;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color:#333333;
+}
+
+.seats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.left-side, .right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  margin: 5px;
+  border: 1px solid #888;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.spacer {
+  flex-grow: 1;
+}

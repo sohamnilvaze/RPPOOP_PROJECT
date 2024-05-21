@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to the App.</title>
+    <style>
+        /* Adjustments to center-align content */
+        .container {
+            text-align: center; /* Center-align all content within the container */
+        }
+        
+        h1 {
+            margin-top: 20px; /* Add space between header and "Our Vision" */
+        }
+
+        p {
+            margin-top: 20px; /* Add space between "Our Vision" and paragraph */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container"> <!-- Wrap content in a container for center alignment -->
+    <h1>Our Vision</h1> <!-- Center-align "Our Vision" -->
+    <p>Hi Customer, We have made a website that will provide you comfort while selecting your train seats. Here we display the seat layout of each coach in a train and will ensure a real-time seat reservation system in which customers will get to select their seats wisely.</p> <!-- Center-align paragraph content -->
+</div>
+
+</body>
+</html>
+
+{% endblock %}

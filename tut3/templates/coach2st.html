@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Train Coach Seating</title>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .title {
+    text-align: center;
+  }
+  .coach {
+    width: 250px;
+    background-color: #ddd;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .seat {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .gap {
+    width: 10px; /* Adjust the width of the gap */
+  }
+</style>
+</head>
+<body>
+  <h2 class="title">Train Coach Seating</h2> <!-- Title added here -->
+  <div class="coach">
+    <!-- Seats will be generated dynamically using JavaScript -->
+  </div>
+  <script>
+    const coach = document.querySelector('.coach');
+    const totalSeats = 75;
+    const seatsPerRow = 5;
+
+    for (let i = 1; i <= totalSeats; i++) {
+      const seat = document.createElement('div');
+      seat.classList.add('seat');
+      seat.textContent = i;
+      coach.appendChild(seat);
+
+      if (i % seatsPerRow === 3 && i !== totalSeats) {
+        const gap = document.createElement('div');
+        gap.classList.add('gap');
+        coach.appendChild(gap);
+      }
+
+      if (i % seatsPerRow === 0 && i !== totalSeats) {
+        const breakElement = document.createElement('div');
+        breakElement.style.width = '100%';
+        coach.appendChild(breakElement);
+      }
+    }
+  </script>
+</body>
+</html>
+

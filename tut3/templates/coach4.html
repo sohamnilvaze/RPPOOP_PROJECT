@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block body %}
+<title>Train Seating</title>
+
+<DOCTYPE! html>
+<html>
+<head>
+    <style>
+        /* Add CSS styles from the second code snippet */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #2704f0;
+            color: #ffffff;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #F8F8F8;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+		h1{
+			text-align: center;
+		}
+    </style>
+</head>
+<body>
+
+<h1> Type of coach is Second AC/AC 2-tier/2A </h1>
+
+<table>
+    <tr>
+        <th> Serial No </th>
+        <th> Position in sequence </th>
+        <th> Available coaches </th>
+        <th> Number of available seats </th>
+    </tr>
+    <tr>
+        <td> {{ ch4sno }} </td>
+        <td> {{ ch4pos }} </td>
+        <td> 
+            <p><a href="A1">A1</a></p>
+        </td>
+        <td> {{ ch4nofs }} </td>
+    </tr>
+</table>
+
+<!--<a href="{{ url_for('coach4seat') }}">To see the layout of the coach</a><br>
+<a href="{{ url_for('booknow') }}">Book your seat</a>-->
+<br><button style="display: block; margin: 80px auto; background-color: #2704f0; color: white; padding: 10px 20px; border: none; border-radius: 5px;" onclick="window.location.href='{{ url_for('coach4seat') }}'">To see the Layout of the coach</button><br>
+<button style="display: block; margin: 50px auto; background-color: #2704f0; color: white; padding: 10px 20px; border: none; border-radius: 5px;" onclick="window.location.href='{{ url_for('booknow') }}'">Book your seat</button>
+
+
+</body>
+</html>
+
+{% endblock %}

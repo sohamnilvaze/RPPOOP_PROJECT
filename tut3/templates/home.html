@@ -1,0 +1,82 @@
+{% extends "layout.html" %} {% block body %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome</title>
+    <style>
+      body {
+        background-color: bisque;
+        flex-direction: row;
+      }
+      .video-container {
+        position: relative;
+        width: 60%; /* Adjust width as needed */
+        float: left; /* Float the video container to the left */
+      }
+
+      video {
+        width: 100%; /* Ensure the video fills its container */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure the video is a block-level element */
+      }
+
+      .content {
+        float: left; /* Float the content to the left */
+        width: 40%; /* Adjust width as needed */
+        padding: 20px; /* Add some padding for better spacing */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="video-container">
+        <video autoplay loop muted>
+          <source
+            src="{{ url_for('static', filename='video.mp4') }}"
+            type="video/mp4"
+          />
+          <!-- Add additional source elements for other video formats if needed -->
+        </video>
+      </div>
+
+      <div class="content">
+        <h1>Welcome to Our Train Seat Booking Service</h1>
+        <p>
+          Dear User,<br />
+          Welcome back to our platform! We're thrilled to have you here. With
+          our train seat booking service, you can easily reserve your preferred
+          seats for upcoming train journeys. Here's what you can do on our
+          website:
+        </p>
+        <ul>
+          <li>
+            <strong>Book Your Seat:</strong> Choose from a variety of trains and
+            select your preferred seat for your journey.
+          </li>
+          <li>
+            <strong>Manage Your Bookings:</strong> View and manage your existing
+            bookings from your account dashboard.
+          </li>
+          <li>
+            <strong>Explore Train Routes:</strong> Discover new destinations and
+            explore different train routes available on our platform.
+          </li>
+          <li>
+            <strong>Stay Informed:</strong> Get real-time updates on train
+            schedules, seat availability, and special offers.
+          </li>
+        </ul>
+        <p>
+          Thank you for choosing our train seat booking service. We're committed
+          to providing you with a seamless booking experience and ensuring your
+          journey is comfortable and enjoyable.
+        </p>
+        <p>Happy booking!</p>
+        <!--<p>[Your Company Name]</p>-->
+      </div>
+    </div>
+  </body>
+</html>
+
+{% endblock %}

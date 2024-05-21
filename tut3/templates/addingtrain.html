@@ -1,0 +1,121 @@
+{% extends "layout.html" %}
+{% block body %}
+    <title>Adding New Train</title>
+    <div class="content-section">
+        <div class="container">
+			<form method="POST" action="" class="mx-auto" style="max-width: 400px;">
+                {{ form.hidden_tag() }}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Add Train Details</legend>
+                    <div class="form-group">
+                        {{ form.trainno.label(class="form-control-label") }}
+                        {% if form.trainno.errors %}
+                            {{ form.trainno(class="form-control form-control-lg form-control-sm col-4 is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.trainno.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.trainno(class="form-control form-control-lg form-control-sm col-4") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.trainname.label(class="form-control-label") }}
+                        {% if form.trainname.errors %}
+                            {{ form.trainname(class="form-control form-control-lg form-control-sm col-4 is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.trainname.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.trainname(class="form-control form-control-lg form-control-sm col-4") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.startstation.label(class="form-control-label") }}
+                        {% if form.startstation.errors %}
+                            {{ form.startstation(class="form-control form-control-lg form-control-sm col-4 is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.startstation.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.startstation(class="form-control form-control-lg form-control-sm col-4") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.endstation.label(class="form-control-label") }}
+                        {% if form.endstation.errors %}
+                            {{ form.endstation(class="form-control form-control-lg form-control-sm col-4 is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.endstation.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.endstation(class="form-control form-control-lg form-control-sm col-4") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.days.label(class="form-control-label") }}
+                        {% if form.days.errors %}
+                            {{ form.days(class="form-control form-control-lg form-control-sm col-4 is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.days.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.days(class="form-control form-control-lg form-control-sm col-4") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.departuretime.label(class="form-control-label") }}
+                        {% if form.departuretime.errors %}
+                            {{ form.departuretime(class="form-control form-control-lg form-control-sm col-4 is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.departuretime.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.departuretime(class="form-control form-control-lg form-control-sm col-4") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.arrivaltime.label(class="form-control-label") }}
+                        {% if form.arrivaltime.errors %}
+                            {{ form.arrivaltime(class="form-control form-control-lg form-control-sm col-4 is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.arrivaltime.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.arrivaltime(class="form-control form-control-lg form-control-sm col-4") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.coaches.label(class="form-control-label") }}
+                        {% if form.coaches.errors %}
+                            {{ form.coaches(class="form-control form-control-lg form-control-sm col-4 is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.coaches.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.coaches(class="form-control form-control-lg form-control-sm col-4") }}
+                        {% endif %}
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    {{ form.submit(class="btn btn-outline-info") }}
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

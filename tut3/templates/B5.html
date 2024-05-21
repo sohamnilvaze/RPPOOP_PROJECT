@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Train Coach Seating - B5</title>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .title {
+    text-align: center;
+  }
+  .coach {
+    width: 250px;
+    background-color: #c5c1c1;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .seat {
+    width: 40px;
+    height: 40px;
+    background-color: #05f311;
+    border: 1px solid #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .gap {
+    width: 10px; /* Adjust the width of the gap */
+  }
+  .booked {
+    background-color: #c5c1c1;  /* Color for booked seats */
+  }
+</style>
+</head>
+<body>
+  <h2 class="title">Train Coach Seating - B5</h2>
+  <div class="coach">
+    <!-- Seats will be generated dynamically using Flask -->
+    {% for seat_number in range(1, 76) %}
+      <div class="seat {% if seat_number in booked_seats %} booked {% endif %}">
+        {{ seat_number }}
+      </div>
+      {% if seat_number % 5 == 0 and seat_number != 75 %}
+        <div class="gap"></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</body>
+</html>

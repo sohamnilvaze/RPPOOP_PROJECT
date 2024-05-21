@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				background-color: bisque;
+				height: 100%;
+			}
+		  /* Center align the content */
+		  .center-align {
+			text-align: center;
+		  }
+		  .wrapper{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-evenly;
+			gap: 12px;
+			background-color: rgb(232, 224, 213);
+			border-radius: 12px;
+			padding: 12px;
+		  }
+
+		  .left-img{
+			width: 90%;
+			border-radius: 24px;
+			overflow: hidden;
+		  }
+
+		  .right-text{
+			border-left: 2px solid grey;
+			padding-left: 12px;
+		  }
+		</style>
+		</head>
+		<body>
+			<br>
+			<br>
+		  <!-- Content wrapped inside a div with class "center-align" -->
+		  <div class="wrapper">
+			<img class="left-img" src="https://images.unsplash.com/photo-1601999007938-f584b47324ac?q=80&w=2638&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+			</img>
+		
+		  <div class="right-text">
+			Welcome to our cutting-edge train seat booking platform, where your journey begins with personalized comfort and convenience! We understand that every traveler is unique, and so are their preferences when it comes to seating arrangements. With our intuitive and user-friendly interface, you have the freedom to browse, select, and reserve your preferred train seat with ease and precision.
+			<br><br>
+			Imagine boarding the train knowing that your chosen seat awaits you, perfectly tailored to your needs and desires. Whether you seek a cozy corner for some quiet relaxation, a window seat to soak in breathtaking vistas, or a strategic spot for quick access to facilities, our platform empowers you to make the choice that best suits your journey.
+			<br><br>
+			Gone are the days of uncertainty and inconvenience; our detailed seat layouts provide you with a comprehensive view of available seating options, allowing you to assess factors like proximity to amenities, carriage layout, and fellow passengers. From solo travelers to families and groups, everyone can find their ideal seat arrangement effortlessly.
+			<br><br>
+			Join our community of discerning travelers and embark on a journey of unparalleled comfort and convenience. Say goodbye to the stress of random seat assignments and hello to a new era of tailored train travel. Whether you're commuting for work, embarking on a leisurely adventure, or simply exploring new destinations, let us enhance your experience with the freedom to choose your perfect seat every time you ride the rails.
+		  </div></div>
+
+		</body>
+		
+{% endblock %}
+
